@@ -13,6 +13,8 @@
 		AD602BE02140A830007E1D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD602BDF2140A830007E1D94 /* Assets.xcassets */; };
 		AD602BE32140A830007E1D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD602BE12140A830007E1D94 /* LaunchScreen.storyboard */; };
 		AD602BEE2140AD65007E1D94 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD602BED2140AD65007E1D94 /* CategoryCell.swift */; };
+		AD602BF02140B07A007E1D94 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD602BEF2140B07A007E1D94 /* Category.swift */; };
+		AD602BF32140B216007E1D94 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD602BF22140B216007E1D94 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AD602BE22140A830007E1D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD602BE42140A830007E1D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD602BED2140AD65007E1D94 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		AD602BEF2140B07A007E1D94 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		AD602BF22140B216007E1D94 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		AD602BD72140A82E007E1D94 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				AD602BF12140B20A007E1D94 /* Services */,
 				AD602BEC2140AD03007E1D94 /* View */,
 				AD602BEB2140ACFD007E1D94 /* Model */,
 				AD602BEA2140ACF5007E1D94 /* Controller */,
@@ -79,7 +84,7 @@
 		AD602BEB2140ACFD007E1D94 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD602BED2140AD65007E1D94 /* CategoryCell.swift */,
+				AD602BEF2140B07A007E1D94 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,8 +92,17 @@
 		AD602BEC2140AD03007E1D94 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD602BED2140AD65007E1D94 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AD602BF12140B20A007E1D94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AD602BF22140B216007E1D94 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,8 @@
 				AD602BDB2140A82E007E1D94 /* CategoriesVC.swift in Sources */,
 				AD602BD92140A82E007E1D94 /* AppDelegate.swift in Sources */,
 				AD602BEE2140AD65007E1D94 /* CategoryCell.swift in Sources */,
+				AD602BF02140B07A007E1D94 /* Category.swift in Sources */,
+				AD602BF32140B216007E1D94 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
