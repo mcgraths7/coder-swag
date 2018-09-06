@@ -30,6 +30,7 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         super.viewDidLoad()
         catTable.delegate = self
         catTable.dataSource = self
+        print(DataService.instance.getProducts(for: "hats"))
         // Do any additional setup after loading the view, typically from a nib.
     }
     
