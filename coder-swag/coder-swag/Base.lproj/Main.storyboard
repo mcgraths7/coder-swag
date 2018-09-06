@@ -87,7 +87,7 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="rl2-uY-BL0"/>
                     <connections>
                         <outlet property="catTable" destination="hhf-4v-kkD" id="vsA-yy-EUP"/>
-                        <segue destination="nKZ-oi-DK2" kind="show" id="cPX-4a-4Sg"/>
+                        <segue destination="nKZ-oi-DK2" kind="show" identifier="ProductsVC" id="cPX-4a-4Sg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,7 +121,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lIH-9m-YWd" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="lIH-9m-YWd" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="278"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -188,6 +188,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z9C-0V-GWk"/>
                     </view>
+                    <connections>
+                        <outlet property="prodCollection" destination="DZa-RT-ovw" id="gU0-rE-4FJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7g-ja-AGC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
