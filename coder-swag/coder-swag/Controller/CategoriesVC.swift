@@ -16,11 +16,13 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         super.viewDidLoad()
         catTable.delegate = self
         catTable.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productsVC = segue.destination as? ProductsVC {
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
             assert(sender as? Category != nil)
             productsVC.initializeProducts(category: sender as! Category)
         }
@@ -44,10 +46,5 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         let category = DataService.instance.getCategories()[indexPath.row]
         performSegue(withIdentifier: "ProductsVC", sender: category)
     }
-
-    
-    
-
-
 }
 

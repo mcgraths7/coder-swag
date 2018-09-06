@@ -18,11 +18,11 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         super.viewDidLoad()
         prodCollection.delegate = self
         prodCollection.dataSource = self
-        // Do any additional setup after loading the view.
     }
     
     func initializeProducts(category: Category) {
         products = DataService.instance.getProducts(for: category.title)
+        navigationItem.title = category.title
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
